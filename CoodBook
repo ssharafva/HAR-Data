@@ -1,0 +1,13 @@
+The final data set contains the following fields:
+Activity - Indicating one of the following six activites: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing and
+Laying
+Subject - A numerical code identifying one of the 30 subjects
+86 variables for each of which mean values are stored for each subject and activite combition.  These variables capture the mean
+and standard deviation of the following factors:
+- Point in time values for body acceleration, gravity acceleration, body acceleration jerk, body gyro and body gyro jerk 
+  along X, Y and Z axes
+- Point in time magnitudes for body acceleration, gravity acceleration, body gyro and body gyro jerk
+- Fast Fourier Transformation values for body acceleration, body acceleration jerk and body gyro along X, Y and Z axes
+- Fast Fourier Transformation magnitude for body acceleration, body acceleration jerk, body gyro and body gyro jerk
+Additionally, there are variable for the angle of the following vectors: gravity, body acceleration, body acceleration jerk,
+body gyro and body gyro jerk
