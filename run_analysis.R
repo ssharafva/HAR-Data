@@ -94,4 +94,4 @@ colnames(har.mean.std) <- vnames
 har.data.group <- group_by(har.mean.std,Activity, Subject)
 ## Calculate the mean of all variables
 final.data.set <- summarise_each(har.data.group,funs(mean))
-write.table(final.data.set,"FinalDataSet.txt")
+write.table(final.data.set,"FinalDataSet.txt",row.name=FALSE)
