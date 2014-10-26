@@ -2,8 +2,11 @@
 library(dplyr)
 ## Set working directory to the root location of HAR data files
 setwd("C:/Users/ssharaf/Documents/RWD/UCI HAR Dataset")
-## Load list of features to be used as column headers
+## Download zip file
 zip.file <- "getdata-projectfiles-UCI HAR Dataset.zip"
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(url, zip.file)
+## Load list of features to be used as column headers
 feature.filename <- "UCI HAR Dataset/features.txt"
 har.features <- read.table(unz(zip.file, feature.filename), sep='\t')
 ## Convert the features into a vector to be used for column names in the data table
